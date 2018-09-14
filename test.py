@@ -55,7 +55,7 @@ def classification_test_datasets():
 
 
 
-def TestStackML:
+class TestStackML:
 
     def test_cv_folds(self):
         pass

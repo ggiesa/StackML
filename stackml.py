@@ -334,7 +334,7 @@ class StackML:
 
         '''
 
-        
+
         predicted_price = self.predict(self.Xtest)
         actual_price = self.ytest
 
@@ -366,9 +366,9 @@ class StackML:
         )
 
         if filename:
-            filename += '.html'
+            filename = f'./plots/{filename}.html'
         else:
-            filename = './plot.html'
+            filename = './plots/plot.html'
 
         plotData = [Actual, Prediction]
         plotly.offline.plot({'data': plotData,

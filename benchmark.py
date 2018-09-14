@@ -141,8 +141,9 @@ def quick_test():
         Xtrain, ytrain, Xtest, ytest = get_benchmark_data(dataset)
         model.fit(Xtrain, ytrain)
         print(f'{dataset}:', round(model.score(Xtest, ytest),4))
-        model.plot_prediction()
+        model.plot_prediction(filename=dataset)
 
 
 
-quick_test()
+if __name__ == '__main__':
+    quick_test()

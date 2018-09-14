@@ -2,7 +2,7 @@
 
 
 
-class optimize:
+class Optimize:
     def __init__(self, ensemble_object):
 
         # Get attributes from ensemble
